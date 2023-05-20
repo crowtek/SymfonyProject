@@ -8,7 +8,7 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class HomeController extends AbstractController
 {
-    #[Route('/home', name: 'home')]
+    #[Route('/', name: 'home')]
     public function index(): Response
     {
         $title = "SYMFONY";
@@ -16,5 +16,17 @@ class HomeController extends AbstractController
         return $this->render('home/index.html.twig', [
             'title' => $title,
         ]);
+    }
+
+    #[Route('/info', name: 'info')]
+    public function info(): Response
+    {
+        return $this->render('home/info.html.twig');
+    }
+
+    #[Route('/apiPage', name: 'apiPage')]
+    public function apiPage(): Response
+    {
+        return $this->render('home/api.html.twig');
     }
 }
