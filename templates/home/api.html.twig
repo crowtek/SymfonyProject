@@ -1,4 +1,15 @@
 {% extends 'base.html.twig' %}
+
+{% block javascripts %}
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="{{ asset('api.js') }}"></script>
+{% endblock %}
+
 {% block body %}
-    <div class="info-container"></div>
+    <h1 class="apiTitle">Drink of the Day</h1>
+    <div class="apiDataContainer">
+        <div class="imageContainer">
+            <img src="" alt="DrinkImg" class="drinkImg">
+        </div>
+    </div>
 {% endblock %}

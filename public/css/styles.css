@@ -106,7 +106,7 @@ body{
 
 
 
-/* Information Seite */
+/* Information Page */
 .info-container{
     width: 100%;
     height: 70vh;
@@ -120,4 +120,23 @@ body{
     margin: 8px;
     font-size: 22px;
     letter-spacing: 0.6px;
+}
+
+
+/* API Page*/
+.apiTitle{
+    text-align: center;
+    padding: 28px;
+}
+.apiDataContainer{
+    display: flex;
+    justify-content: center;
+}
+.drinkText{
+    width: 500px;
+}
+.drinkText p{
+    margin: 25px;
+    font-size: 22px;
+    letter-spacing: 0.7px;
 }
